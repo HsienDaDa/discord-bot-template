@@ -1,0 +1,21 @@
+{
+  "name": "discord-http-interactions-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A reusable Discord HTTP Interactions bot template for Cloudflare Workers.",
+  "scripts": {
+    "register": "node scripts/register-commands.js",
+    "bootstrap": "node scripts/bootstrap.js",
+    "test": "node --test",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "wrangler": "^4.20.0"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Discord HTTP Bot",
+  "install": {
+    "context": "Guild Install",
+    "scopes": [
+      "bot",
+      "applications.commands"
+    ],
+    "permissions": [
+      "View Channels",
+      "Send Messages",
+      "Embed Links",
+      "Read Message History"
+    ]
+  },
+  "commands": [
+    {
+      "name": "ping",
+      "description": "Replies with pong"
+    },
+    {
+      "name": "hello",
+      "description": "Say hello",
+      "options": [
+        {
+          "type": 3,
+          "name": "name",
+          "description": "Name to greet",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "status",
+      "description": "Show bot status"
+    },
+    {
+      "name": "actions",
+      "description": "Show interactive actions"
+    },
+    {
+      "name": "select",
+      "description": "Choose a platform"
+    },
+    {
+      "name": "form",
+      "description": "Open feedback form"
+    }
+  ],
+  "privilegedGatewayIntents": []
+}
